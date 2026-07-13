@@ -1,0 +1,74 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+/* index.css - Add these imports at the VERY TOP */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap");
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+/* @import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities"; */
+
+@import "tailwindcss";
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #faf9f6;
+  color: #1e293b;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Justify all paragraph text in the right column */
+.highlight-container p {
+  text-align: justify;
+}
+
+/* Highlight Wrapper - Dimming effect */
+.highlight-container [data-highlightable="true"] {
+  transition:
+    opacity 0.3s ease,
+    filter 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    padding 0.3s ease,
+    margin 0.3s ease;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  margin: -0.5rem -1rem;
+}
+
+/* When the container is hovered, dim all children that are not hovered */
+.highlight-container:hover [data-highlightable="true"]:not(:hover) {
+  opacity: 0.4;
+  filter: grayscale(0.5) blur(0.5px);
+}
+
+/* When a child is hovered, bring it forward with subtle off-white background */
+.highlight-container [data-highlightable="true"]:hover {
+  opacity: 1 !important;
+  filter: grayscale(0) blur(0px) !important;
+  background-color: #faf9f6 !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  position: relative;
+  z-index: 10;
+  padding: 1.5rem 2rem;
+  margin: -1.5rem -2rem;
+}
