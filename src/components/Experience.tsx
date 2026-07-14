@@ -89,8 +89,8 @@ const Experience = () => {
           <div>
             <div className="flex flex-col md:flex-row md:justify-between md:items-baseline gap-1">
               <h3 className="text-xl font-semibold text-[#0a0a0a]">
-                Web Development <span className="text-[#c9774a]">•</span>{" "}
-                BeCode, Ghent
+                Web Development Apprenticeship{" "}
+                <span className="text-[#c9774a]">•</span> BeCode, Ghent
               </h3>
               <p className="text-sm text-[#6b7280] whitespace-nowrap">
                 October 2020 - April 2021

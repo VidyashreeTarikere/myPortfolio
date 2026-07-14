@@ -52,7 +52,7 @@ const NavBar = () => {
           Vidya Tarikere
         </h1>
         <p className="text-xl md:text-2xl font-medium text-[#2a9d8f] mt-2">
-          Business Analyst & Product Owner
+          Technical Business Analyst
         </p>
         <p className="text-base text-[#4a4a4a] mt-3 leading-relaxed">
           I bridge business needs and technical solutions to deliver impactful
