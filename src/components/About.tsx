@@ -12,12 +12,12 @@ const About = () => {
 
       <div className="space-y-4 text-[#1e293b] leading-relaxed text-lg">
         <p>
-          I'm a Business Analyst Researcher based in Ghent, with a solid track
-          record of turning complex technical chaos into clear requirements,
-          optimized processes, and happy stakeholders. My work at KNoWs (UGent &
-          IMEC) on knowledge graphs and semantic web taught me how to bridge the
-          gap between developers, researchers, and business folks, without
-          anyone losing their mind.
+          I'm a Business Analyst based in Ghent, with a solid track record of
+          turning complex technical chaos into clear requirements, optimized
+          processes, and happy stakeholders. My work at KNoWs (UGent & IMEC) on
+          knowledge graphs and semantic web taught me how to bridge the gap
+          between developers, researchers, and business folks, without anyone
+          losing their mind.
         </p>
         <br />
         <p>
